@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Menu";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Vienvenido al menu de ISTOCKNET.</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Categorias</h2>
+        <p>
+            <a href='@Url.Action("Index", "Categories")'>
+                <img src="@Url.Content("~/Images/Categorias.png")" alt="imgf" />
+            </a>
+            
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Productos</h2>
+        <p>
+            <a href='@Url.Action("Index","Products")'>
+                <img src="@Url.Content("~/Images/productos.png")" alt="imgf" />
+            </a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Inventario</h2>
+        <p>
+            <a href='@Url.Action("Index","Inventario")'>
+            <img src="@Url.Content("~/Images/inventarios.png")" alt="imgf" />
+                </a>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Entradas</h2>
+        <p>
+            <img src="@Url.Content("~/Images/Entradas.png")" alt="imgf" />
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Salidas</h2>
+        <p>
+            <img src="@Url.Content("~/Images/Salidas.png")" alt="imgf" />
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Reportes</h2>
+        <p>
+            <img src="@Url.Content("~/Images/Reportes.jpg")" alt="imgf" />
+        </p>
+    </div>
+</div>

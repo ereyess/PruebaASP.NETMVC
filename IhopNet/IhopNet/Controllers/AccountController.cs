@@ -449,7 +449,7 @@ namespace IhopNet.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Manage");
+            return RedirectToAction("Menu", "Home");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
